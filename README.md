@@ -16,21 +16,21 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ## ☕ Usando o DriveGo
 
 ### 1. Módulo de Usuários
-- Cadastro de clientes e motoristas.
-- Validação de motoristas antes de começarem a trabalhar.
-- Adição de múltiplas formas de pagamento para clientes.
+>- Cadastro de clientes e motoristas.
+>- Validação de motoristas antes de começarem a trabalhar.
+>- Adição de múltiplas formas de pagamento para clientes.
 
 ### 2. Módulo de Viagens
-- Solicitação de viagens para passageiros e entregas de pacotes.
-- Restrições de veículos para diferentes tipos de viagens.
-- Impedimento de motoristas aceitarem múltiplas viagens simultaneamente.
+>- Solicitação de viagens para passageiros e entregas de pacotes.
+>- Restrições de veículos para diferentes tipos de viagens.
+>- Impedimento de motoristas aceitarem múltiplas viagens simultaneamente.
 
 ### 3. Módulo de Pagamentos
-- Suporte a Pix, Cartão de Crédito e Dinheiro.
-- Tratamento de exceções para pagamentos recusados.
+>- Suporte a Pix, Cartão de Crédito e Dinheiro.
+>- Tratamento de exceções para pagamentos recusados.
 
 ### 4. Módulo de Persistência
-- Salvamento e recuperação de dados via serialização.
+>- Salvamento e recuperação de dados via serialização.
 
 ## 🛠️ Tecnologias Utilizadas
 
