@@ -1,8 +1,0 @@
-package negocio.basica;
-
-public class Motocicleta extends Veiculo {
-
-    public Motocicleta(String modelo, String marca, String cor, int anoFabricacao, String placa) {
-        super("Motocicleta", marca, cor, anoFabricacao, placa);
-    }
-}
