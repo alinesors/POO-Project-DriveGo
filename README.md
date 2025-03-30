@@ -47,32 +47,3 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ![GitHub stars](https://img.shields.io/github/stars/alinesors/POO-Project-DriveGo?style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues/alinesors/POO-Project-DriveGo?style=for-the-badge)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/alinesors/POO-Project-DriveGo?style=for-the-badge)
-
-## 🎓 Colaboradores
-
-Pessoas que contribuíram para este projeto:
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/alinesors" title="Aline github">
-        <img src="./img/aline.jpg" width="100px;" alt="Foto da Aline"/><br>
-        <sub>
-          <b>Aline Fernanda</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/vinibcc" title="Vini github">
-        <img src="./img/vini.jpg" width="100px;" alt="Foto do vini"/><br>
-        <sub>
-          <b>Marcos Vinicius</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-## 📜 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
