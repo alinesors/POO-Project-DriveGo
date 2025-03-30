@@ -43,7 +43,3 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ## 📊 Estatísticas do Projeto
 
 ![GitHub language count](https://img.shields.io/github/languages/count/alinesors/POO-Project-DriveGo?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/alinesors/POO-Project-DriveGo?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/alinesors/POO-Project-DriveGo?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/alinesors/POO-Project-DriveGo?style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/alinesors/POO-Project-DriveGo?style=for-the-badge)
