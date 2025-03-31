@@ -1,6 +1,6 @@
 package dados.Interface;
 
-
+import java.util.List;
 import negocio.basica.modelo.Cidade;
 
 public interface IRepositorioCidade {
