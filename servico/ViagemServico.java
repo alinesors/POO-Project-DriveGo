@@ -1,8 +1,6 @@
 package servico;
 import dados.Interface.IRepositorioViagem;
-import dados.implementacoesArrayList.RepositorioViagemArrayList;
 import java.util.List;
-import java.util.ArrayList
 import negocio.basica.modelo.Viagem;
 
 
@@ -15,7 +13,7 @@ public class ViagemServico {
     }
 
     public ViagemServico(){
-        this.repositorioViagem = new RepositorioViagemArrayList();
+      
     }
 
     public void cadastrarViagem(Viagem viagem) {

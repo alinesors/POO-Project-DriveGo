@@ -1,34 +1,20 @@
 package dados.Interface;
 
 import java.util.List;
-
 import negocio.basica.modelo.FormaDePagamento;
 
-public class IRepositorioPagamento {
+public interface IRepositorioPagamento {
 
-    public List<FormaDePagamento> listarFormasDePagamento() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarFormasDePagamento'");
-    }
+    void salvarFormaDePagamento(FormaDePagamento entidade);
 
-    public FormaDePagamento buscarFormaDePagamento(String id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarFormaDePagamento'");
-    }
+    FormaDePagamento buscarFormaDePagamento(String id);
 
-    public void atualizarFormaDePagamento(FormaDePagamento formaDePagamento) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'atualizarFormaDePagamento'");
-    }
+    void atualizarFormaDePagamento(FormaDePagamento entidade);
 
-    public void removerFormaDePagamento(FormaDePagamento formaDePagamento) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'removerFormaDePagamento'");
-    }
+    void removerFormaDePagamento(FormaDePagamento formaDePagamento);
 
-    public void salvarFormaDePagamento(FormaDePagamento formaDePagamento) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'salvarFormaDePagamento'");
-    }
+    List<FormaDePagamento> listarFormasDePagamento();
+
+    List<FormaDePagamento> listarPorCliente(String clienteId);
 
 }

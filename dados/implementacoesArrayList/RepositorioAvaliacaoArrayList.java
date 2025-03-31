@@ -21,11 +21,7 @@ public class RepositorioAvaliacaoArrayList {
     }
 
     public Avaliacao buscarAvaliacao(String id) {
-        for (Avaliacao avaliacao : avaliacoes) {
-            if (avaliacao.getId().equalsIgnoreCase(id)) {
-                return avaliacao;
-            }
-        }
+       
         return null;
     }
 
@@ -34,16 +30,11 @@ public class RepositorioAvaliacaoArrayList {
     }
 
     public void atualizarAvaliacao(Avaliacao avaliacao) {
-        for (int i = 0; i < avaliacoes.size(); i++) {
-            if (avaliacoes.get(i).getId().equalsIgnoreCase(avaliacao.getId())) {
-                avaliacoes.set(i, avaliacao);
-                return;
-            }
-        }
+      
     }
 
     public void removerAvaliacao(String id) {
-        avaliacoes.removeIf(a -> a.getId().equalsIgnoreCase(id));
+       
     }
 
     public void removerAvaliacao(Avaliacao avaliacao) {

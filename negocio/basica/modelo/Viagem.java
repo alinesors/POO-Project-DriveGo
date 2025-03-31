@@ -23,4 +23,76 @@ public abstract class Viagem {
         this.avaliacaoMotorista = new Avaliacao();
         this.avaliacaoCliente = new Avaliacao();
     }
+
+    public Motorista getMotorista() {
+        return motorista;
+    }
+
+    public void setMotorista(Motorista motorista) {
+        this.motorista = motorista;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Origem getOrigem() {
+        return origem;
+    }
+
+    public void setOrigem(Origem origem) {
+        this.origem = origem;
+    }
+
+    public Destino getDestino() {
+        return destino;
+    }
+
+    public void setDestino(Destino destino) {
+        this.destino = destino;
+    }
+
+    public FormaDePagamento getFormaDePagamento() {
+        return formaDePagamento;
+    }
+
+    public void setFormaDePagamento(FormaDePagamento formaDePagamento) {
+        this.formaDePagamento = formaDePagamento;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public double getValorFinal() {
+        return valorFinal;
+    }
+
+    public void setValorFinal(double valorFinal) {
+        this.valorFinal = valorFinal;
+    }
+
+    public Avaliacao getAvaliacaoMotorista() {
+        return avaliacaoMotorista;
+    }
+
+    public void setAvaliacaoMotorista(Avaliacao avaliacaoMotorista) {
+        this.avaliacaoMotorista = avaliacaoMotorista;
+    }
+
+    public Avaliacao getAvaliacaoCliente() {
+        return avaliacaoCliente;
+    }
+
+    public void setAvaliacaoCliente(Avaliacao avaliacaoCliente) {
+        this.avaliacaoCliente = avaliacaoCliente;
+    }
 }

@@ -1,10 +1,8 @@
 package servico;
 
-import java.util.List;
-import java.util.ArrayList;
-import negocio.basica.modelo.Veiculo;
 import dados.Interface.*;
-import dados.implementacoesArrayList.RespositorioVeiculoArrayList;
+import java.util.List;
+import negocio.basica.modelo.Veiculo;
 
 
 public class VeiculoServico {
@@ -12,7 +10,7 @@ public class VeiculoServico {
     private IRepositorioVeiculo repositorioVeiculo;
 
     public VeiculoServico() {
-        this.repositorioVeiculo = new RespositorioVeiculoArrayList();
+   
     }
 
     public void cadastrarVeiculo(Veiculo veiculo) {

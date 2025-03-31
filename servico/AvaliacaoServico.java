@@ -1,9 +1,7 @@
 package servico;
 import dados.Interface.IRepositorioAvaliacao;
-import dados.implementacoesArrayList.RepositorioAvaliacaoArrayList;
-import negocio.basica.modelo.Avaliacao;
 import java.util.List;
-import java.util.ArrayList;
+import negocio.basica.modelo.Avaliacao;
 
 public class AvaliacaoServico {
 
@@ -14,7 +12,7 @@ public class AvaliacaoServico {
     }
 
     public AvaliacaoServico() {
-        this.repositorioAvaliacao = new RepositorioAvaliacaoArrayList();
+       
     }
 
     public void cadastrarAvaliacao(Avaliacao avaliacao) {

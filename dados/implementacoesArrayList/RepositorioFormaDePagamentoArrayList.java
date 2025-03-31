@@ -3,7 +3,7 @@ package dados.implementacoesArrayList;
 import java.util.ArrayList;
 import java.util.List;
 import negocio.basica.modelo.FormaDePagamento;
-import negocio.basica.modelo.FormaDePagamento;
+
 
 public class RepositorioFormaDePagamentoArrayList {
 
@@ -22,11 +22,7 @@ public class RepositorioFormaDePagamentoArrayList {
     }
 
     public FormaDePagamento buscarFormaDePagamento(String id) {
-        for (FormaDePagamento FormaDePagamento : FormaDePagamentos) {
-            if (FormaDePagamento.getId().equals(id)) {
-                return FormaDePagamento;
-            }
-        }
+
         return null;
     }
 
@@ -35,12 +31,7 @@ public class RepositorioFormaDePagamentoArrayList {
     }
 
     public void atualizarFormaDePagamento(FormaDePagamento FormaDePagamento) {
-        for (int i = 0; i < FormaDePagamentos.size(); i++) {
-            if (FormaDePagamentos.get(i).getId().equals(FormaDePagamento.getId())) {
-                FormaDePagamentos.set(i, FormaDePagamento);
-                return;
-            }
-        }
+
     }
 
     public void removerFormaDePagamento(FormaDePagamento FormaDePagamento) {

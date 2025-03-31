@@ -1,11 +1,7 @@
 package servico;
 
-import java.util.List;
 import dados.Interface.IRepositorioPagamento;
-import dados.implementacoesArrayList.RepositorioPagamentoArrayList;
-import negocio.basica.modelo.Pagamento;
-
-
+import java.util.List;
 import negocio.basica.modelo.FormaDePagamento;
 
 public class PagamentoServico {
@@ -17,7 +13,7 @@ public class PagamentoServico {
     }
 
     public PagamentoServico() {
-        this.repositorioPagamento = new RepositorioPagamentoArrayList();
+      
     }
 
     public void cadastrarFormaDePagamento(FormaDePagamento formaDePagamento) {

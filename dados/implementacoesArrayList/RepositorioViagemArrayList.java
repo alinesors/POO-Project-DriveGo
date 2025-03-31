@@ -1,9 +1,7 @@
 package dados.implementacoesArrayList;
 
-import java.util.ArrayList;
-import negocio.basica.modelo.Viagem;
 import java.util.List;
-import dados.implementacoes.RepositorioViagemInterface; 
+import negocio.basica.modelo.Viagem;
 
 
 public class RepositorioViagemArrayList {
@@ -15,11 +13,7 @@ public class RepositorioViagemArrayList {
     }
 
     public Viagem buscarViagem(String id) {
-        for (Viagem viagem : viagens) {
-            if (viagem.getId().equals(id)) {
-                return viagem;
-            }
-        }
+       
         return null; 
     }
 
@@ -28,16 +22,10 @@ public class RepositorioViagemArrayList {
     }
 
     public void atualizarViagem(Viagem viagem) {
-        for (int i = 0; i < viagens.size(); i++) {
-            if (viagens.get(i).getId().equals(viagem.getId())) {
-                viagens.set(i, viagem);
-                return;
-            }
-        }
+        
+        
     }
 
-    public void removerViagem(Viagem viagem) {
-        viagens.removeIf(v -> v.equals(viagem));
-    }
+
 
 }

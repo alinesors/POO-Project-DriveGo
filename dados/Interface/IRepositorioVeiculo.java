@@ -1,34 +1,22 @@
 package dados.Interface;
 
 import java.util.List;
-
 import negocio.basica.modelo.Veiculo;
 
-public class IRepositorioVeiculo {
+public interface IRepositorioVeiculo {
 
-    public void salvarVeiculo(Veiculo veiculo) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'SalvarVeiculo'");
-    }
+    void salvarVeiculo(Veiculo entidade);
+    
+    Veiculo buscarVeiculo(String id);
 
-    public Veiculo buscarVeiculo(String placa) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarVeiculo'");
-    }
+    void atualizarVeiculo(Veiculo entidade);
 
-    public void atualizarVeiculo(Veiculo veiculo) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'atualizarVeiculo'");
-    }
+    void removerVeiculo(String id);
 
-    public void removerVeiculo(String placa) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'removerVeiculo'");
-    }
+    List<Veiculo> listarVeiculos();
 
-    public List<Veiculo> listarVeiculos() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarVeiculos'");
-    }
+    List<Veiculo> listarPorTipo(String tipo);
+
+    
 
 }
