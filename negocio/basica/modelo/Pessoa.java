@@ -3,6 +3,8 @@ package negocio.basica.modelo;
 import java.util.ArrayList;
 
 public abstract class Pessoa {
+
+    private String id;
     private String nome;
     private String cpf;
     private String telefone;
@@ -18,7 +20,15 @@ public abstract class Pessoa {
         this.endereco = endereco;
         this.email = email;
         this.nota = 0;
-        this.avaliacoes = new ArrayList<Double>();
+        this.avaliacoes = new ArrayList<>();
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -76,5 +86,7 @@ public abstract class Pessoa {
     public void setAvaliacoes(ArrayList<Double> avaliacoes) {
         this.avaliacoes = avaliacoes;
     }
+
+    
 
 }

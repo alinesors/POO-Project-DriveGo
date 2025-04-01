@@ -2,12 +2,14 @@ package dados.implementacoesArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import dados.Interface.IRepositorioPagamento;
 import negocio.basica.modelo.FormaDePagamento;
 
 
-public class RepositorioFormaDePagamentoArrayList {
+public class RepositorioFormaDePagamentoArrayList implements IRepositorioPagamento{
 
-    private List<FormaDePagamento> FormaDePagamentos;
+    private final List<FormaDePagamento> FormaDePagamentos;
 
     public RepositorioFormaDePagamentoArrayList() {
         this.FormaDePagamentos = new ArrayList<>();
@@ -17,10 +19,7 @@ public class RepositorioFormaDePagamentoArrayList {
         this.FormaDePagamentos = FormaDePagamentos;
     }
 
-    public void SalvarFormaDePagamento(FormaDePagamento FormaDePagamento) {
-        this.FormaDePagamentos.add(FormaDePagamento);
-    }
-
+    @Override
     public FormaDePagamento buscarFormaDePagamento(String id) {
 
         return null;
@@ -30,12 +29,29 @@ public class RepositorioFormaDePagamentoArrayList {
         return FormaDePagamentos;
     }
 
+    @Override
     public void atualizarFormaDePagamento(FormaDePagamento FormaDePagamento) {
 
     }
 
+    @Override
     public void removerFormaDePagamento(FormaDePagamento FormaDePagamento) {
         FormaDePagamentos.remove(FormaDePagamento);
+    }
+
+    @Override
+    public void salvarFormaDePagamento(FormaDePagamento entidade){
+
+    }
+
+    @Override
+    public List<FormaDePagamento> listarFormasDePagamento(){
+        return FormaDePagamentos;
+    }
+
+    @Override
+    public List<FormaDePagamento> listarPorCliente(String clienteId){
+        return FormaDePagamentos;
     }
 
 }

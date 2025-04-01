@@ -1,47 +1,82 @@
 package dados.implementacoesArrayList;
 
+import dados.Interface.IRepositorioUsuario;
 import java.util.ArrayList;
-import dados.implementacoes.*; 
 import java.util.List;
+
+import negocio.basica.modelo.Cliente;
+import negocio.basica.modelo.Motorista;
 import negocio.basica.modelo.Pessoa;
 
-public class RepositorioUsuarioArrayList{
+public class RepositorioUsuarioArrayList implements IRepositorioUsuario{
 
-    private final List<Pessoa> usuarios = new ArrayList<>();
+    private final List<Pessoa> pessoas;
 
-    public void SalvarUsuario(Pessoa usuario) {
-        usuarios.add(usuario);
+    public RepositorioUsuarioArrayList() {
+        this.pessoas = new ArrayList<>();
     }
 
-    public Pessoa buscarUsuario(String cpf) {
-        for (Pessoa usuario : usuarios) {
-            if (usuario.getCpf().equals(cpf)) {
-                return usuario;
+    @Override
+    public void salvar(Pessoa entidade) {
+        pessoas.add(entidade);
+    }
+
+    @Override
+    public Pessoa buscarPorId(String id) {
+        for (Pessoa pessoa : pessoas) {
+            if (pessoa.getId().equals(id)) {
+                return pessoa;
             }
         }
         return null; 
     }
 
-
-    public List<Pessoa> listarUsuarios() {
-        return usuarios;
-    }
-
-    public void atualizarUsuario(Pessoa usuario) {
-        for (int i = 0; i < usuarios.size(); i++) {
-            if (usuarios.get(i).getCpf().equals(usuario.getCpf())) {
-                usuarios.set(i, usuario);
+    @Override
+    public void atualizar(Pessoa entidade) {
+        for (int i = 0; i < pessoas.size(); i++) {
+            if (pessoas.get(i).getId().equals(entidade.getId())) {
+                pessoas.set(i, entidade);
                 return;
             }
         }
     }
 
-    public void removerUsuario(String cpf) {
-        usuarios.removeIf(u -> u.getCpf().equals(cpf));
+    @Override
+    public void deletar(String id) {
+        for (int i = 0; i < pessoas.size(); i++) {
+            if (pessoas.get(i).getId().equals(id)) {
+                pessoas.remove(i);
+                return;
+            }
+        }
     }
 
+    @Override
+    public List<Pessoa> listarTodos() {
+        return pessoas;
+    }
 
+    @Override
+    public List<Cliente> listarClientes() {
+        List<Cliente> clientes = new ArrayList<>();
+        for (Pessoa pessoa : pessoas) {
+            if (pessoa instanceof Cliente cliente) {
+                clientes.add((Cliente) cliente);
+            }
+        }
+        return clientes;
+    }
 
+    @Override
+    public List<Motorista> listarMotoristas() {
+        List<Motorista> motoristas = new ArrayList<>();
+        for (Pessoa pessoa : pessoas) {
+            if (pessoa instanceof Motorista motorista) {
+                motoristas.add(motorista);
+            }
+        }
+        return motoristas;
+    }
 }
 
 

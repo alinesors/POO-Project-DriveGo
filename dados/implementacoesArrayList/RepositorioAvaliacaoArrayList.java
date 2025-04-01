@@ -1,45 +1,54 @@
 package dados.implementacoesArrayList;
 
-import java.util.ArrayList;
 import java.util.List;
 import negocio.basica.modelo.Avaliacao;
+import dados.Interface.IRepositorioAvaliacao;
+import java.util.ArrayList;
 
-public class RepositorioAvaliacaoArrayList {
+public class RepositorioAvaliacaoArrayList implements IRepositorioAvaliacao{
 
-    private List<Avaliacao> avaliacoes;
+    private final List<Avaliacao> avaliacoes;
 
-    public RepositorioAvaliacaoArrayList() {
+    public RepositorioAvaliacaoArrayList(){
         this.avaliacoes = new ArrayList<>();
     }
 
-    public RepositorioAvaliacaoArrayList(List<Avaliacao> avaliacoes) {
-        this.avaliacoes = avaliacoes;
+    @Override
+    public void inserirAvaliacao(Avaliacao avaliacao) {
+        avaliacoes.add(avaliacao);
     }
 
-    public void SalvarAvaliacao(Avaliacao avaliacao) {
-        this.avaliacoes.add(avaliacao);
-    }
-
-    public Avaliacao buscarAvaliacao(String id) {
-       
-        return null;
-    }
-
+    @Override
     public List<Avaliacao> listarAvaliacoes() {
         return avaliacoes;
     }
 
+    @Override
+    public Avaliacao buscarAvaliacao(String id) {
+        for (Avaliacao avaliacao : avaliacoes) {
+            if (String.valueOf(avaliacao.getId()).equals(id)) {
+                return avaliacao;
+            }
+        }
+        return null;
+    }
+
+    @Override
     public void atualizarAvaliacao(Avaliacao avaliacao) {
-      
+        for (int i = 0; i < avaliacoes.size(); i++) {
+            if (avaliacoes.get(i).getId() == avaliacao.getId()) {
+                avaliacoes.set(i, avaliacao);
+                return;
+            }
+        }
     }
 
-    public void removerAvaliacao(String id) {
-       
-    }
-
+    @Override
     public void removerAvaliacao(Avaliacao avaliacao) {
         avaliacoes.remove(avaliacao);
     }
+
+   
 
 
 }

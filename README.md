@@ -1,7 +1,5 @@
 # DriveGo - Sistema de Transporte sob Demanda
 
-<img src="./img/logo.png" alt="logo">
-
 > O **DriveGo** foi inspirado na necessidade de simular um sistema de transporte sob demanda, como o Uber, para aplicar os conceitos de Programação Orientada a Objetos (POO). O objetivo é oferecer uma solução simples, mas robusta, para gerenciar viagens, pagamentos e usuários.
 
 ## 🗺️ Roadmap

@@ -31,8 +31,8 @@ public class AvaliacaoServico {
         repositorioAvaliacao.atualizarAvaliacao(avaliacao);
     }
 
-    public void removerAvaliacao(String id) {
-        repositorioAvaliacao.removerAvaliacao(id);
+    public void removerAvaliacao(Avaliacao avaliacao) {
+        repositorioAvaliacao.removerAvaliacao(avaliacao);
     }
 
 }

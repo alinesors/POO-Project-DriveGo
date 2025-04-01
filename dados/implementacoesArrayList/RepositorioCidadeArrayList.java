@@ -3,12 +3,13 @@ package dados.implementacoesArrayList;
 import java.util.ArrayList;
 import java.util.List;
 
+import dados.Interface.IRepositorioCidade;
 import negocio.basica.modelo.Cidade;
 
 
-public class RepositorioCidadeArrayList {
+public class RepositorioCidadeArrayList implements IRepositorioCidade{
 
-    private List<Cidade> cidades;
+    private final List<Cidade> cidades;
 
     public RepositorioCidadeArrayList() {
         this.cidades = new ArrayList<>();
@@ -18,10 +19,7 @@ public class RepositorioCidadeArrayList {
         this.cidades = cidades;
     }
 
-    public void SalvarCidade(Cidade cidade) {
-        this.cidades.add(cidade);
-    }
-
+    @Override
     public Cidade buscarCidade(String nome) {
         for (Cidade cidade : cidades) {
             if (cidade.getNome().equalsIgnoreCase(nome)) {
@@ -31,10 +29,12 @@ public class RepositorioCidadeArrayList {
         return null;
     }
 
+    @Override
     public List<Cidade> listarCidades() {
         return cidades;
     }
 
+    @Override
     public void atualizarCidade(Cidade cidade) {
         for (int i = 0; i < cidades.size(); i++) {
             if (cidades.get(i).getNome().equalsIgnoreCase(cidade.getNome())) {
@@ -44,10 +44,13 @@ public class RepositorioCidadeArrayList {
         }
     }
 
+    @Override
     public void removerCidade(String nome) {
         cidades.removeIf(c -> c.getNome().equalsIgnoreCase(nome));
     }
 
-
-
+    @Override
+    public void salvarCidade(Cidade cidade) {
+        cidades.add(cidade);
+    }
 }

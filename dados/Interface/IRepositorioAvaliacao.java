@@ -14,9 +14,7 @@ public interface IRepositorioAvaliacao {
 
     void atualizarAvaliacao(Avaliacao avaliacao);
 
-    void removerAvaliacao(String id);
-
-
+    void removerAvaliacao(Avaliacao avaliacao);
 
 
 }
