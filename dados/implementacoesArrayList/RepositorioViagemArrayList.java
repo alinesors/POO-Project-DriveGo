@@ -26,7 +26,7 @@ public class RepositorioViagemArrayList implements IRepositorioViagem{
     @Override
     public void atualizarViagem(Viagem entidade) {
         for (int i = 0; i < viagens.size(); i++) {
-            if (viagens.get(i).getId() == entidade.getId()) {
+            if (viagens.get(i).getId().equals(entidade.getId())) {
                 viagens.set(i, entidade);
                 return;
             }

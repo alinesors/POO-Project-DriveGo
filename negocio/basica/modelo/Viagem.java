@@ -1,7 +1,17 @@
 package negocio.basica.modelo;
 
+import negocio.basica.modelo.Avaliacao;
+import negocio.basica.modelo.Cliente;
+import negocio.basica.modelo.Destino;
+import negocio.basica.modelo.FormaDePagamento;
+import negocio.basica.modelo.Motorista;
+import negocio.basica.modelo.Origem;
+
 public abstract class Viagem {
 
+    private String id;
+    private String clienteId;
+    private String motoristaId;    
     private Motorista motorista;
     private Cliente cliente;
     private Origem origem;
@@ -19,11 +29,9 @@ public abstract class Viagem {
         this.destino = destino;
         this.formaDePagamento = formaDePagamento;
         this.status = "Solicitada";
-        this.valorFinal = 0.0;
-        this.avaliacaoMotorista = new Avaliacao();
         this.avaliacaoCliente = new Avaliacao();
-    }
-
+    }    
+    
     public Motorista getMotorista() {
         return motorista;
     }
@@ -95,4 +103,33 @@ public abstract class Viagem {
     public void setAvaliacaoCliente(Avaliacao avaliacaoCliente) {
         this.avaliacaoCliente = avaliacaoCliente;
     }
+}
+
+    public String getId() {
+        return id;
+    }
+
+
+
+    public void setId(String id) {
+        this.id = id;
+    }
+     
+    public String getClienteId() {
+        return ClienteId;
+    }
+
+    public void setClienteId(String clienteId) {
+        ClienteId = clienteId;
+    }
+
+
+    public String getMotoristaId() {
+        return MotoristaId;
+    }
+
+    public void setMotoristaId(String motoristaId) {
+        MotoristaId = motoristaId;
+    }
+
 }
