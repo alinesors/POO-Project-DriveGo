@@ -2,15 +2,6 @@
 
 > O **DriveGo** foi inspirado na necessidade de simular um sistema de transporte sob demanda, como o Uber, para aplicar os conceitos de Programação Orientada a Objetos (POO). O objetivo é oferecer uma solução simples, mas robusta, para gerenciar viagens, pagamentos e usuários.
 
-## 🗺️ Roadmap
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
-
-- [ ] Cadastro de usuários (clientes e motoristas).
-- [ ] Solicitação e execução de viagens.
-- [ ] Implementação de diferentes tipos de veículos.
-- [ ] Integração de avaliações mútuas entre clientes e motoristas.
-- [ ] Melhorias na interface de usuário (UI).
-
 ## ☕ Usando o DriveGo
 
 ### 1. Módulo de Usuários
